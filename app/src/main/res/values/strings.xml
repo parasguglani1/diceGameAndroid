@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dice Game</string>
+    <string name="play_again">Play Again</string>
+    <string name="name">Name</string>
+    <string name="enter_player_2_name">Enter Player 2 Name</string>
+    <string name="play">play</string>
+    <string name="enter_player_1_name">Enter Player 1 Name</string>
+</resources>
