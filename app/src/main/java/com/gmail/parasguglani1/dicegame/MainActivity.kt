@@ -6,11 +6,17 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         rollDice()
         val rollButton: Button = findViewById(R.id.play_btn)
+
+
         rollButton.setOnClickListener {
 //            Toast.makeText(this, "Dice rolled",Toast.LENGTH_SHORT).show()
             rollDice()
