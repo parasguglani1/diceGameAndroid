@@ -5,4 +5,9 @@
     <string name="enter_player_2_name">Enter Player 2 Name</string>
     <string name="play">play</string>
     <string name="enter_player_1_name">Enter Player 1 Name</string>
+    <string name="diceGame">DiceGame</string>
+    <string name="player2name">player2name</string>
+    <string name="player1name">player1name</string>
+    <string name="player1">player1</string>
+    <string name="player2">player2</string>
 </resources>

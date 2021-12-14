@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f9ff9f"
     tools:context=".Input">
+
+    <include layout="@layout/footer" />
 
     <Button
         android:id="@+id/play_btn2"
@@ -13,7 +16,8 @@
         android:text="@string/play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName2" />
 
 
     <EditText
@@ -25,6 +29,8 @@
         android:hint="@string/name"
 
         android:inputType="textPersonName"
+        android:textColor="#070707"
+        android:textColorHint="#191919"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,21 +46,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="168dp"
+        android:autofillHints="Your Name"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
+        android:textColor="#191818"
+        android:textColorHint="#101010"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="Your Name" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_player_1_name"
+        android:textColor="#050505"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextPersonName1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enter_player_2_name"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextPersonName2"
         app:layout_constraintEnd_toEndOf="parent"

@@ -4,28 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#393E46"
+
     tools:context=".MainActivity">
+
+    <include layout="@layout/footer" />
+
+    <TextView
+        android:id="@+id/drawCount"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:text="Draw"
+        android:textColor="#4ECCA3"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/play_btn"
+        app:layout_constraintEnd_toEndOf="@+id/play_btn"
+        app:layout_constraintStart_toStartOf="@+id/play_btn"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.885" />
+
+    <ImageView
+        android:id="@+id/dice2Result"
+        android:layout_width="110dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice1Result"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.40"
+        tools:srcCompat="@drawable/dice_1" />
 
     <Button
         android:id="@+id/play_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/play_again"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dice1Result" />
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.917" />
 
     <ImageView
         android:id="@+id/dice1Result"
-        android:layout_width="160dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="264dp"
+        android:layout_width="110dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dice2Result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.40"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="286dp"
+        android:layout_height="66dp"
+        android:text="@string/diceGame"
+        android:textAlignment="center"
+        android:textColor="#4ECCA3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/dice_1" />
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <TextView
+        android:id="@+id/player1name"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:text="@string/player1"
+        android:textColor="#4ECCA3"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/dice1Result"
+        app:layout_constraintEnd_toEndOf="@+id/dice1Result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dice1Result"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <TextView
+        android:id="@+id/player2name"
+        android:layout_width="107dp"
+        android:layout_height="39dp"
+        android:text="@string/player2"
+        android:textColor="#4ECCA3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dice2Result"
+        app:layout_constraintEnd_toEndOf="@+id/dice2Result"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="@+id/dice2Result"
+        app:layout_constraintTop_toBottomOf="@+id/resultText"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <!-- Footer aligned to bottom -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

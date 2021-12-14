@@ -19,10 +19,17 @@ class Input : AppCompatActivity() {
 
 
 
+
         val playButton: Button = findViewById(R.id.play_btn2)
         playButton.setOnClickListener {
+//            Toast.makeText(this,name1,Toast.LENGTH_SHORT).show()
 //            Toast.makeText(this,name2,Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, MainActivity::class.java))
+            val intent = Intent(this,MainActivity::class.java)
+            intent.putExtra("player1name",name1.toString() )
+            intent.putExtra("player2name",name2.toString() )
+            startActivity(intent)
+
+
 
 
 
